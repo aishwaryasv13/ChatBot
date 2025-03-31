@@ -1,0 +1,108 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0; /* Set the background color for the whole page */
+    }
+
+    .chat-container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      height: 700px;
+      background-color: #f0f0c1; /* Set the background color for the chat container */
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+      opacity: 0.95;
+    }
+
+    .chat-header {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-family: Cooper, Black Oblique;
+      color: #000; /* Set a primary color for the header */
+    }
+
+    .chat-messages {
+      height: 600px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      background-color: #f9f9f9; /* Set the background color for the chat messages */
+    }
+
+    .chat-input {
+      display: flex;
+    }
+
+    .chat-input input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px 0 0 8px;
+    }
+
+    .chat-input button {
+      padding: 8px 15px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+    }
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Place the image behind other content */
+      object-fit: cover; /* Scale the image to cover the entire background */
+      opacity: 1; /* Adjust the image opacity if desired */
+    }
+    /* Add some hover effects for the button */
+    .chat-input button:hover {
+      background-color: #0056b3;
+    }
+.watermark {
+  position: fixed;
+  top: 90%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+ color: white;
+  opacity: 0.95;
+  pointer-events: none; /* To prevent the watermark from interfering with input events */
+  z-index: 9999; /* Make sure the watermark stays on top */
+}
+
+/* New styles for user input */
+.message.outgoing {
+  text-align: right;
+  background-color: #99ccff; /* You can change this to the desired color for user input */
+  color: #000;
+  margin-left: auto; /* Push the user input block to the right by setting auto margin for left */
+}
+
+/* New styles for system response */
+.message.incoming {
+  text-align: left;
+  background-color: #f9f9f9; /* You can change this to the desired color for system response */
+  color: #000;
+  margin-right: auto; /* Push the system response block to the right by setting auto margin for right */
+}
+
+/* Common styles for both user input and system response */
+.message {
+  max-width: 80%;
+  margin: 0px 5px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+
+}
